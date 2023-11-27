@@ -44,8 +44,9 @@ func _enter_tree() -> void:
 	var popup := PopupMenu.new()
 	var label_fmt := "Generate %s Layer Enums"
 	var options := load_plugin_options()
-	for layer:Dictionary in options:
-		popup.add_item(label_fmt % layer["name"], layer["index"])
+	for i in options.size():
+		var layer = options[i]
+		popup.add_item(label_fmt % layer["name"], i)
 	popup.add_item("Generate All", options.size())
 	popup.id_pressed.connect(generate_enums)
 	add_tool_submenu_item("Layer Enums", popup)
