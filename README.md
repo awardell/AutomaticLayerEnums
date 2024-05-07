@@ -21,4 +21,4 @@ After editing plugin_options.cfg, disable then re-enable Automatic Layer Enums
 from Project/Project Settings/Plugins to apply the changes.
 
 - award
-- adamwardell@gmail.com
+- contact@adamwardell.com
